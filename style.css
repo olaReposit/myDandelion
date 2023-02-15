@@ -1,0 +1,277 @@
+* {
+  font-family: poppins;
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes pump {
+  from {
+    width: 4em;
+    opacity: 0.2;
+  }
+  to {
+    width: 5em;
+    opacity: 0.8;
+  }
+}
+
+@-webkit-keyframes pump {
+  from {
+    width: 4em;
+    opacity: 0.2;
+  }
+  to {
+    width: 5em;
+    opacity: 0.8;
+  }
+}
+
+@-o-keyframes pump {
+  from {
+    width: 4em;
+    opacity: 0.2;
+  }
+  to {
+    width: 5em;
+    opacity: 0.8;
+  }
+}
+
+@-moz-keyframes pump {
+  from {
+    width: 4em;
+    opacity: 0.2;
+  }
+  to {
+    width: 5em;
+    opacity: 0.8;
+  }
+}
+
+@keyframes btn {
+  from {
+    background-color: black;
+    letter-spacing: initial;
+    padding: 1em 2em;
+  }
+  to {
+    background-color: blueviolet;
+    letter-spacing: 0.1em;
+    padding: 1.2em 2.1em;
+    border-radius: 3em;
+  }
+}
+
+@-webkit-keyframes btn {
+  from {
+    background-color: black;
+    letter-spacing: initial;
+    padding: 1em 2em;
+  }
+  to {
+    background-color: blueviolet;
+    letter-spacing: 0.1em;
+    padding: 1.2em 2.1em;
+    border-radius: 3em;
+  }
+}
+
+@-moz-keyframes btn {
+  from {
+    background-color: black;
+    letter-spacing: initial;
+    padding: 1em 2em;
+  }
+  to {
+    background-color: blueviolet;
+    letter-spacing: 0.1em;
+    padding: 1.2em 2.1em;
+    border-radius: 3em;
+  }
+}
+
+@-o-keyframes btn {
+  from {
+    background-color: black;
+    letter-spacing: initial;
+    padding: 1em 2em;
+  }
+  to {
+    background-color: blueviolet;
+    letter-spacing: 0.1em;
+    padding: 1.2em 2.1em;
+    border-radius: 3em;
+  }
+}
+
+@keyframes blurIn {
+  from {
+    filter: blur(20px);
+    background-position: initial;
+  }
+  to {
+    filter: blur(0px);
+    background-position: center;
+  }
+}
+
+@-webkit-keyframes blurIn {
+  from {
+    -webkit-filter: blur(20px);
+    background-position: initial;
+  }
+  to {
+    -webkit-filter: blur(0px);
+    background-position: center;
+  }
+}
+
+@-moz-keyframes blurIn {
+  from {
+    -moz-filter: blur(20px);
+  }
+  to {
+    -moz-filter: blur(0px);
+  }
+}
+
+@-o-keyframes blurIn {
+  from {
+    -o-filter: blur(20px);
+  }
+  to {
+    -o-filter: blur(0px);
+  }
+}
+
+audio {
+  display: none;
+}
+
+.heartContainer {
+  position: absolute;
+}
+
+.heart {
+  width: 70px;
+  position: fixed;
+  top: 0;
+  z-index: 0;
+  left: -15px;
+  animation: pump 1200ms alternate infinite;
+}
+
+.heart2 {
+  top: 10px;
+  left: 2px;
+  width: 30px;
+}
+
+.heart3 {
+  right: 3px;
+  bottom: 2px;
+  left: initial;
+  top: initial;
+}
+
+.heart4 {
+  right: 30px;
+  bottom: 30px;
+  left: initial;
+  top: initial;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.body {
+  background-color: rgba(0, 0, 0, 0.9);
+  width: 100%;
+  height: 100%;
+  /* position: relative; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2em 0;
+}
+
+.container {
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 90%;
+  max-width: 400px;
+  padding: 1em 2em;
+  box-sizing: border-box;
+  border-radius: 1.5em;
+  transition: 5000ms ease;
+  animation: blurIn 1000ms;
+}
+
+div.header {
+  margin-bottom: 4em;
+  text-align: center;
+  border-bottom: 1px solid blueviolet;
+  /* border-radius: 10%; */
+  padding: 1em 2em;
+  transition: 500ms ease;
+  animation: blurIn 5000ms;
+}
+
+div.header h2 {
+  color: blueviolet;
+}
+
+div.header p {
+  font-weight: 500;
+  font-size: 12px;
+}
+
+div.msgBody p {
+  margin-bottom: 2em;
+  text-align: center;
+  transition: 700ms ease-in 1s;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+div.msgBody {
+  animation: blurIn 8000ms;
+}
+
+div.msgBody cite {
+  font-weight: 700;
+  color: blueviolet;
+  animation: blurIn 10000ms;
+}
+
+div.msgBody p strong {
+  color: blueviolet;
+}
+
+div.msgBody p strong:hover {
+  cursor: pointer;
+  animation: blurIn 500ms;
+}
+
+.btn {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.button {
+  background-color: black;
+  color: whitesmoke;
+  font-weight: 700;
+  padding: 1em 2em;
+  border-radius: 0.8em;
+  border-bottom: 2px solid blueviolet;
+  cursor: pointer;
+  transition: 300ms ease-out;
+  box-sizing: border-box;
+  width: fit-content;
+  text-transform: uppercase;
+  font-size: 10px;
+  animation: btn 1500ms alternate-reverse infinite ease-in;
+  animation-delay: 2000ms;
+}
